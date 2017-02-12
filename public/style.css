@@ -1,0 +1,44 @@
+.navitem {
+  color: black;
+  display: inline-block;
+  padding: 5px;
+  border-width: 1px;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  text-decoration: none;
+  margin-bottom: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px
+}
+
+#content {
+  padding-top: 5px;
+  border-top-style: solid;
+  border-width: 1px;
+}
+
+.active {
+  background-color: lightgray;
+}
+
+button {
+  color: white;
+  background: blue;
+  font-size: 12;
+  cursor: pointer;
+  border: none;
+}
+
+.grid_delete {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.grid {
+  height: 200px;
+}
+
+form { 
+  padding-bottom: 10px;
+}

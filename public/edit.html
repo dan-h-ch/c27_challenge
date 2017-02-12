@@ -1,0 +1,21 @@
+<h2>capital</h2>
+<table>
+  <thead>
+    <tr>
+      <td>State</td>
+      <td>Capital</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{editEntry.state}}</td>
+      <td><input ng-model="editEntry.capital"></td>
+      <td><button ng-click="saveCapital(editEntry.capital)">Save</button></td>
+      <td><button ng-click="delete()">Delete</button></td>
+      <td><button ng-click="cancel()">Cancel</button></td>
+    </tr>
+  </tbody>
+</table>

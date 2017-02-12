@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="app" ng-controller="appController">
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-route.min.js"></script>
+    <script src="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+      <a href="/#/helloworld"><div ng-class="getNavClass('/helloworld')">Hello World</div></a>
+      <a href="/#/window"><div ng-class="getNavClass('/window')">Window Size</div></a>
+      <a href="/#/capitals"><div ng-class="getNavClass('/capitals')">Capitals</div></a>
+      <a href="/#/capitalgrid"><div ng-class="getNavClass('/capitalgrid')">Capital Grid</div></a>
+    <div id="content" ng-view></div>
+    <script src="index.js"></script>
+  </body>
+</html>

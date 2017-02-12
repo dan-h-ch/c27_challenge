@@ -1,0 +1,22 @@
+<h2>capital</h2>
+<table>
+  <thead>
+    <tr>
+      <td>State</td>
+      <td>Capital</td>
+      <td></td>
+    </tr>
+  </thead>
+  </tbody>
+    <tr ng-repeat="state in states track by $index">
+      <td>{{state.state}}</td>
+      <td>{{state.capital}}</td>
+      <td><a href="/#/edit/{{$index}}">Edit</a></td>
+    </tr>
+    <tr>
+      <td><input ng-model="entry.state" placeholder="State"></td>
+      <td><input ng-model="entry.capital" placeholder="Capital"></td>
+      <td><button ng-click="add()">Add New Capital</button></td>
+    </tr>
+  </tbody>
+</table>
